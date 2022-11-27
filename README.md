@@ -61,13 +61,27 @@ developing your own process.
 ## Your Notes Here
 
 - Add a new toy when the toy form is submitted
+error 500
+NameError (uninitialized constant ToysController::Toys):
+
+app/controllers/toys_controller.rb:10:in `create'
+
 
   - How I debugged:
+  When trying to debug i checked and found that there was an uninitialized constant  and the error was in the create section. I checked and found that there was a name error in line 10 and corrected it.
 
 - Update the number of likes for a toy
+(anonymous function)
+src/components/ToyCard.js:21
+syntax error
 
   - How I debugged:
+  I checked the code and found that the code was not rendered .
 
 - Donate a toy to Goodwill (and delete it from our database)
+error 404 not found
+ActionController::RoutingError (No route matches [DELETE] "/toys/17"):
 
   - How I debugged:
+
+  There was no route for the delete method thus added it.
